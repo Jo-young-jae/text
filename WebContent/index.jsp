@@ -5,6 +5,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Insert title here</title>
+<style>
+
+</style>
 <script>
 	window.onload = function(){
 		document.getElementById("input").onclick = function(){
@@ -12,19 +15,20 @@
 		}
 		
 		document.getElementById("output").onclick = function(){
-			location.href = "output.jsp";
-		}
-		
+			location.href = "output.do";
+		}		
 	}
 </script>
 </head>
-<body>
-	5jo fighting!!
-	
-	<div id="wrapper">
-		<div>Person Test</div><br>
-		<div><button id="input">Input</button></div>
-		<div><button id="output">Output</button></div>
-	</div>
+<body>	
+	<table border=1>
+		<tr>
+			<td colspan=2>Person Project</td>
+		</tr>
+		<tr>
+			<td><input type="button" id="input" value="Input"></td>
+			<td><input type="button" id="output" value="Output"></td>
+		</tr>
+	</table>
 </body>
 </html>
