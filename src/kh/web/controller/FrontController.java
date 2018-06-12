@@ -27,10 +27,11 @@ public class FrontController extends HttpServlet {
 			response.setCharacterEncoding("utf8");
 			PrintWriter out = response.getWriter();
 
-			if(command.equals("output.do")) {
+			if(command.equals("/output.do")) {
 				PersonDAO dao = new PersonDAO();
 				List<PersonDTO> dto = dao.selectData();
-			}else if(command.equals("input.do")) {
+				
+			}else if(command.equals("/input.do")) {
 				String name = request.getParameter("email");
 				String email = request.getParameter("email");
 				PersonDAO dao = new PersonDAO();
